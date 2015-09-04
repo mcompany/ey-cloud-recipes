@@ -1,4 +1,4 @@
-if node[:instance_role] == db_master
+if node[:instance_role] == "db_master"
 	execute "testing" do
   		command %Q{
     			echo "i ran at #{Time.now}" >> /root/cheftime
