@@ -1,9 +1,10 @@
-#execute "testing" do
-#  command %Q{
-#    echo "i ran at #{Time.now}" >> /root/cheftime
-#  }
-#end
-
+if node[:instance_role] == db_master
+	execute "testing" do
+  		command %Q{
+    			echo "i ran at #{Time.now}" >> /root/cheftime
+  		}
+	end
+end
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
 
