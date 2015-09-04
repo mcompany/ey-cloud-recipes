@@ -11,7 +11,7 @@ if node[:instance_role] == "db_master"
 		group "root"
 	end
 	
-	pakage	'mtr' do
+	pakage	'net-analyzer/mtr' do
 		version '0.82'		
 	end
 		 
