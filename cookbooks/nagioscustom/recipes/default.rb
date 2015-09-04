@@ -10,8 +10,9 @@ if node[:instance_role] == "db_master"
 		owner "root"
 		group "root"
 	end
-	
-	pakage	'net-analyzer/mtr' do
+
+		
+	package	'net-analyzer/mtr' do
 		version '0.82'		
 	end
 		 
