@@ -178,3 +178,4 @@ end
 #include_recipe "env_motd"
 
 include_recipe "mysqlcustom"
+include_recipe "nagioscustom"
