@@ -8,6 +8,6 @@ if node[:instance_role] == "db_master"
 		owner "root"
 		group "root"
 		mode  00644
-		notifies :reload "service[mysql]", :delayed
+		notifies :reload, "service[mysql]", :delayed
 	end
 end
