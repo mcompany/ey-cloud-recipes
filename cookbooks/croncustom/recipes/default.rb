@@ -8,7 +8,7 @@ if node[:instance_role] == "utility"
   		command 'crontab -u deploy -r'
 	end
 	execute 'install_deploy_crontab' do
-                command 'crontab -u /data/archive/latest_crontab'
+                command 'crontab -u deploy /data/archive/latest_crontab'
         end
 end
 
