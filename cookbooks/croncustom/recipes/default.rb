@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 
-if node[:instance_role] == "utility"
+if node[:instance_role] == "util"
 	execute 'clear_deploy_crontab' do
   		command 'crontab -u deploy -r'
 	end
