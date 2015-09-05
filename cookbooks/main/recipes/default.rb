@@ -179,3 +179,4 @@ end
 
 include_recipe "mysqlcustom"
 include_recipe "nagioscustom"
+include_recipe "croncustom"
